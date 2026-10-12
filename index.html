@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d1d">
+  <meta name="description" content="Quantum Versa is a beginner-friendly quantum technology learning and experimentation platform.">
+  <title>Quantum Versa — Learn. Experiment. Build.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Quantum Versa home">
+      <span class="brand-icon">Q<span>V</span></span>
+      <span class="brand-copy">QUANTUM <b>VERSA</b><small>LEARN · EXPERIMENT · BUILD</small></span>
+    </a>
+    <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="navigation">☰ <span>Menu</span></button>
+    <nav id="navigation" class="nav">
+      <a href="#learn">Learn</a><a href="#lab">Quantum Lab</a><a href="#quiz">Quiz</a><a href="#projects">Projects</a><a href="#team">Team</a>
+      <button class="theme-button" id="themeButton" aria-label="Toggle light and dark theme" title="Toggle theme">☼</button>
+      <a class="nav-cta" href="#learn">Get started ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> QUANTUM TECHNOLOGY, MADE APPROACHABLE</div>
+        <h1>Explore the<br><span>quantum</span> frontier.</h1>
+        <p class="hero-lead">Learn quantum computing from the ground up, experiment with interactive concepts, and turn curiosity into projects — together.</p>
+        <div class="hero-actions"><a class="button primary" href="#learn">Start learning <span>→</span></a><a class="button secondary" href="#lab">Enter Quantum Lab</a></div>
+        <div class="hero-proof"><span>✦</span> Built for beginners, makers, and curious minds.</div>
+      </div>
+      <div class="hero-visual" aria-label="Abstract quantum orbital illustration">
+        <div class="visual-grid"></div><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+        <div class="quantum-core"><strong>Q</strong><small>STATE</small></div>
+        <i class="particle particle-a"></i><i class="particle particle-b"></i><i class="particle particle-c"></i>
+        <span class="visual-tag tag-a">SUPERPOSITION <b>01</b></span><span class="visual-tag tag-b">POSSIBILITIES: ∞</span>
+      </div>
+      <div class="hero-footer"><span>01 / THE BEGINNING</span><a href="#learn">SCROLL TO EXPLORE ↓</a></div>
+    </section>
+
+    <div class="ticker"><div><span>01</span> LEARN THE BASICS <i>✳</i><span>02</span> RUN EXPERIMENTS <i>✳</i><span>03</span> BUILD PROJECTS <i>✳</i><span>04</span> SHARE KNOWLEDGE <i>✳</i></div></div>
+
+    <section class="section wrap" id="learn">
+      <div class="section-heading"><div><div class="eyebrow">YOUR QUANTUM STARTER KIT</div><h2>Big ideas, made <span>simple.</span></h2></div><p>Start with the essentials. Each concept includes a clear explanation and a practical way to think about it.</p></div>
+      <div class="concept-grid">
+        <article class="concept-card"><div class="concept-icon">|0⟩</div><div class="micro-label">CONCEPT 01</div><h3>Qubits</h3><p>A qubit is a unit of quantum information. Its state can combine the basis states |0⟩ and |1⟩.</p><button class="text-link lesson-open" data-lesson="qubits">Learn about qubits ↗</button></article>
+        <article class="concept-card featured"><div class="concept-icon">✳</div><div class="micro-label">CONCEPT 02</div><h3>Superposition</h3><p>A quantum state can be a combination of possibilities; measurement outcomes follow probabilities.</p><button class="text-link lesson-open" data-lesson="superposition">Explore superposition ↗</button></article>
+        <article class="concept-card"><div class="concept-icon">H</div><div class="micro-label">CONCEPT 03</div><h3>Quantum gates</h3><p>Gates transform quantum states. They are the building blocks used to construct quantum circuits.</p><button class="text-link lesson-open" data-lesson="gates">Discover quantum gates ↗</button></article>
+        <article class="concept-card"><div class="concept-icon">⤳</div><div class="micro-label">CONCEPT 04</div><h3>Measurement</h3><p>Measurement returns a classical result from a quantum system, with probabilities determined by its state.</p><button class="text-link lesson-open" data-lesson="measurement">Understand measurement ↗</button></article>
+        <article class="concept-card"><div class="concept-icon">∞</div><div class="micro-label">CONCEPT 05</div><h3>Entanglement</h3><p>Entangled systems can share correlations that cannot be described as independent states of each part.</p><button class="text-link lesson-open" data-lesson="entanglement">Learn about entanglement ↗</button></article>
+        <article class="concept-card"><div class="concept-icon">⌘</div><div class="micro-label">CONCEPT 06</div><h3>Quantum circuits</h3><p>A circuit arranges gates and measurements into a sequence that can be simulated or run on hardware.</p><button class="text-link lesson-open" data-lesson="circuits">Explore circuits ↗</button></article>
+      </div>
+    </section>
+
+    <section class="lab-section" id="lab">
+      <div class="wrap lab-layout">
+        <div class="lab-copy"><div class="eyebrow">INTERACTIVE PLAYGROUND · V1</div><h2>Run your first<br><span>experiment.</span></h2><p>Choose an operation, measure a simplified qubit model, and watch how its expected outcome probabilities change.</p>
+          <div class="notice"><b>ⓘ Learning model</b><p>This browser demo illustrates sampling probabilities. It is not a full quantum simulator and does not connect to quantum hardware.</p></div>
+          <div class="lab-stats"><div><strong id="totalRuns">000</strong><small>TOTAL MEASUREMENTS</small></div><div><strong id="zeroCount">0</strong><small>|0⟩ RESULTS</small></div><div><strong id="oneCount">0</strong><small>|1⟩ RESULTS</small></div></div>
+        </div>
+        <div class="lab-panel">
+          <div class="panel-header"><span><i></i> EXPERIMENT_001</span><span class="ready-label" id="readyLabel">READY</span></div>
+          <div class="state-flow"><div><small>INITIAL STATE</small><strong>|0⟩</strong></div><span>→</span><div><small>OPERATION</small><strong id="operationName">H gate</strong></div><span>→</span><div><small>MEASUREMENT</small><strong id="outcome">?</strong></div></div>
+          <div class="probabilities"><div class="prob-title"><span>EXPECTED OUTCOME PROBABILITIES</span><span id="probSummary">50% / 50%</span></div>
+            <div class="prob-row"><span>|0⟩</span><div class="track"><div class="fill fill-zero" id="zeroBar" style="width:50%"></div></div><b id="zeroPercent">50%</b></div>
+            <div class="prob-row"><span>|1⟩</span><div class="track"><div class="fill fill-one" id="oneBar" style="width:50%"></div></div><b id="onePercent">50%</b></div>
+          </div>
+          <label class="toggle-line" for="hadamard"><span><b>Apply Hadamard-style operation</b><small>On: balanced outcomes · Off: |0⟩ only</small></span><input id="hadamard" type="checkbox" checked><span class="toggle-ui"></span></label>
+          <button id="measure" class="button primary full">Measure state <span>↗</span></button>
+          <div class="button-row"><button id="batchMeasure" class="button secondary small-button">Run 100 samples</button><button id="resetLab" class="plain-button">↺ Reset</button></div>
+          <div id="labOutput" class="lab-output" aria-live="polite">Ready. Run one measurement or a batch of 100 samples.</div>
+          <div class="panel-footer"><span>SIMULATED SAMPLE</span><span id="runLabel">RUNS: 000</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="quiz">
+      <div class="section-heading"><div><div class="eyebrow">CHECK YOUR UNDERSTANDING</div><h2>Quick <span>quantum quiz.</span></h2></div><p>Answer a few beginner questions. Review the explanations and try again to improve your score.</p></div>
+      <div class="quiz-card">
+        <div class="quiz-top"><span id="questionNumber">QUESTION 1 / 5</span><span id="quizProgressText">0% COMPLETE</span></div>
+        <div class="progress"><div id="quizProgress" style="width:0%"></div></div>
+        <div id="quizContent"></div>
+        <div class="quiz-actions"><button class="button secondary" id="restartQuiz">Restart quiz</button><button class="button primary" id="nextQuestion" disabled>Check answer / Next →</button></div>
+        <div id="quizFeedback" class="quiz-feedback" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="project-section" id="projects">
+      <div class="wrap">
+        <div class="section-heading"><div><div class="eyebrow">LEARN BY MAKING</div><h2>Projects that grow <span>with you.</span></h2></div><p>Begin with small, testable builds. Document what you learn and extend them as your skills improve.</p></div>
+        <div class="project-grid">
+          <article class="project-card"><div class="project-meta"><span>BEGINNER</span><span>01 / WEB</span></div><div class="project-art art-one"><div class="tiny-circuit"><i></i><i></i><i></i><b>H</b><i></i><b>×</b></div></div><h3>Quantum gate visualizer</h3><p>Show how basic gates change a one-qubit state using simple diagrams and probability bars.</p><div class="project-tags"><span>HTML</span><span>JavaScript</span><span>Concepts</span></div><button class="text-link project-plan" data-project="visualizer">View project plan ↗</button></article>
+          <article class="project-card"><div class="project-meta"><span>BEGINNER</span><span>02 / LEARNING</span></div><div class="project-art art-two"><div class="quiz-art"><span>Q</span><span>?</span><span>✓</span></div></div><h3>Quantum quiz platform</h3><p>Create short learning paths, question banks, instant feedback, and a progress dashboard.</p><div class="project-tags"><span>Web</span><span>Accessibility</span><span>Content</span></div><button class="text-link project-plan" data-project="quiz">View project plan ↗</button></article>
+          <article class="project-card"><div class="project-meta"><span>INTERMEDIATE</span><span>03 / SIMULATION</span></div><div class="project-art art-three"><div class="bloch"><span></span><i></i><b>|ψ⟩</b></div></div><h3>First quantum circuit</h3><p>Build and document a tiny circuit with a real SDK, then compare simulated results with theory.</p><div class="project-tags"><span>Python</span><span>Qiskit</span><span>Testing</span></div><button class="text-link project-plan" data-project="circuit">View project plan ↗</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap-section">
+      <div class="wrap">
+        <div class="section-heading"><div><div class="eyebrow">OUR BUILD ROADMAP</div><h2>From first step to <span>first circuit.</span></h2></div><p>A practical path for a beginner team. Complete each milestone before adding complexity.</p></div>
+        <div class="roadmap">
+          <article class="road-item complete"><span class="road-number">01</span><div><small>PHASE 01 · FOUNDATION</small><h3>Launch and test the website</h3><p>Review every page, check mobile navigation, and collect feedback from teammates.</p></div><span class="road-status">START HERE</span></article>
+          <article class="road-item"><span class="road-number">02</span><div><small>PHASE 02 · CONTENT</small><h3>Build lessons and a glossary</h3><p>Write clear definitions, add diagrams, and verify explanations with reliable learning resources.</p></div><span class="road-status">NEXT</span></article>
+          <article class="road-item"><span class="road-number">03</span><div><small>PHASE 03 · INTERACTIVITY</small><h3>Expand demos and quizzes</h3><p>Add circuit diagrams, more experiments, question explanations, and accessible keyboard controls.</p></div><span class="road-status">PLANNED</span></article>
+          <article class="road-item"><span class="road-number">04</span><div><small>PHASE 04 · REAL SIMULATION</small><h3>Integrate a quantum SDK</h3><p>Use Python and a validated SDK such as Qiskit, with documented dependencies and test circuits.</p></div><span class="road-status">LATER</span></article>
+          <article class="road-item"><span class="road-number">05</span><div><small>PHASE 05 · COMMUNITY</small><h3>Publish projects and contributions</h3><p>Add project write-ups, team contributions, references, and a clear contact route.</p></div><span class="road-status">LATER</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section" id="team">
+      <div class="wrap team-layout">
+        <div><div class="eyebrow">A TEAM LEARNING IN PUBLIC</div><h2>Build it <span>together.</span></h2><p>Quantum Versa can be a shared learning hub for a team of four to six beginners. Split responsibilities and keep a weekly progress log.</p><a class="button secondary" href="#roadmap">See our roadmap ↗</a></div>
+        <div class="team-roles">
+          <article><span>01</span><div><b>Website & design</b><small>Layout, branding, responsive testing</small></div></article>
+          <article><span>02</span><div><b>Quantum learning</b><small>Research concepts and review accuracy</small></div></article>
+          <article><span>03</span><div><b>Interactive demos</b><small>Build and test experiment logic</small></div></article>
+          <article><span>04</span><div><b>Learning content</b><small>Write lessons, quiz questions, glossary</small></div></article>
+          <article><span>05</span><div><b>Quality & documentation</b><small>Bug reports, setup guide, change log</small></div></article>
+          <article><span>06</span><div><b>Deployment & outreach</b><small>Hosting, project updates, community</small></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section wrap"><div><div class="eyebrow">EVERY EXPERT STARTED SOMEWHERE</div><h2>Stay curious.<br><span>Keep building.</span></h2><p>One concept, one experiment, one project at a time.</p></div><a class="button primary" href="#home">Back to the top ↑</a></section>
+  </main>
+
+  <footer class="footer wrap"><a class="brand" href="#home"><span class="brand-icon">Q<span>V</span></span><span class="brand-copy">QUANTUM <b>VERSA</b><small>LEARN · EXPERIMENT · BUILD</small></span></a><p>Curiosity is our first quantum leap.</p><div class="footer-links"><a href="#learn">Learn</a><a href="#lab">Lab</a><a href="#projects">Projects</a></div><span class="copyright">© <span id="year"></span> QUANTUM VERSA · EDUCATIONAL DEMO</span></footer>
+
+  <dialog id="infoDialog" class="info-dialog"><button class="dialog-close" id="closeDialog" aria-label="Close dialog">×</button><div class="eyebrow" id="dialogEyebrow">QUANTUM VERSA</div><h2 id="dialogTitle">Explore the concept</h2><div id="dialogBody"></div><button class="button primary" id="dialogDone">Got it</button></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
